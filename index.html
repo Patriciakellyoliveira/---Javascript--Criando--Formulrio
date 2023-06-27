@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 1.5em;
+        }
+        body{
+            background: #015958;
+        }
+
+        section {
+            background-color: white;
+            width: 600px;
+            height: 900px;
+            padding: 10px 10px 10px;
+            margin: 90px auto;
+            border-radius: 10px;
+        }
+
+        section > h1 {
+            font-size: 1.3em;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            margin-bottom: 10px;
+        }
+
+        form {
+            padding-left: 20px;
+        }
+
+        label {
+            font-style: oblique;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 560px;
+            height: 50px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        button {
+            background-color: #015958;
+            color: white;
+            width: 570px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 30px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuários só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+        <form action="/" method="POST" class="formulario">
+            <label>Nome:</label><br>
+            <input type="text"  class="validar"><br>
+
+            <label>Sobrenome:</label><br>
+            <input type="text"  class="validar"><br>
+
+            <label>CPF:</label><br>
+            <input type="text"  class="validar"><br>
+
+            <label>Usuário:</label><br>
+            <input type="text" class="validar"><br>
+
+            <label>Senha:</label><br>
+            <input type="password"  class="validar"><br>
+
+            <label>Repetir Senha:</label><br>
+            <input type="password" class="validar"><br>
+            <p>
+            <button type="submit">Enviar</button>
+            </p>
+    </section>
+</body>
+</html>
